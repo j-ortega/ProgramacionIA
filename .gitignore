@@ -1,0 +1,23 @@
+# Cachés y archivos compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+
+# Variables de entorno locales
+.env
+.env.*
+
+# Archivos temporales de herramientas Python y Jupyter
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db

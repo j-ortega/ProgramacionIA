@@ -1,4 +1,4 @@
-import leccion1
+import leccion2 as leccion1
 
 # EJERCICIO 1: INDEXADO / SLICING
 
