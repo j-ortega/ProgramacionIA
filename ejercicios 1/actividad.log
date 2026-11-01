@@ -1,0 +1,15 @@
+INFO: usuario=ana tiempo=0.23
+ERROR: usuario=pepe tiempo=0.01
+WARNING: usuario=marta tiempo=1.23
+INFO: usuario=javier tiempo=0.45
+INFO: usuario=ana tiempo=0.32
+ERROR: usuario=carlos tiempo=0.15
+WARNING: usuario=pepe tiempo=0.80
+INFO: usuario=marta tiempo=0.20
+ERROR: usuario=javier tiempo=0.05
+INFO: usuario=lucia tiempo=0.60
+WARNING: usuario=ana tiempo=1.10
+INFO: usuario=carlos tiempo=0.35
+ERROR: usuario=pepe tiempo=0.12
+INFO: usuario=javier tiempo=0.40
+WARNING: usuario=lucia tiempo=0.95
