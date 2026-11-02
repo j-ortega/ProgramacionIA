@@ -1,3 +1,8 @@
+
+
+# EJERCICIO 1: INDEXADO / SLICING
+
+
 # Indexado/Slicing
 def indexado4letras(palabra:str)->str:
        return palabra[:4]
@@ -11,6 +16,11 @@ def invertida(palabra:str)->str:
 def ultima3letras(palabra:str)->str:
        return palabra[-3:]
 
+
+
+# EJERCICIO 2: MEMBERSHIP
+
+
 # Membership
 def pertenece(palabra:str, letra:str)->bool:
        return letra in palabra
@@ -21,31 +31,38 @@ def pertenecelista(palabra:list, letra:str)->bool:
 def convertirSetPertenece(palabra:list, letra:str)->bool:
        return letra in set(palabra)
 
-# LEN
+
+
+# EJERCICIO 3: LEN
+
 
 def longitud_lista(elementos: list) -> int:
-    # Devuelve el número de elementos de la lista
+    # Devuelve el número de elementos
     return len(elementos)
 
-# CADENAS
+
+
+# EJERCICIO 4: CADENAS
 
 
 def limpiar_cadena(texto: str) -> str:
-    # Quita espacios del principio y del final
+    # Elimina espacios al principio y al final
     return texto.strip()
 
 
 def separar_cadena(texto: str) -> tuple:
-    # Separa el texto utilizando la coma
+    # Separa una cadena por comas
     partes = texto.split(",")
     return tuple(partes)
 
 
 def unir_cadenas(partes: tuple) -> str:
-    # Une las partes con un guion
+    # Une las cadenas con un guion
     return " - ".join(partes)
 
-# CONDICIONALES
+
+
+# EJERCICIO 5: CONDICIONALES
 
 
 def clasificar_numero(numero: float) -> str:
@@ -56,7 +73,10 @@ def clasificar_numero(numero: float) -> str:
     else:
         return "Cero"
 
+
+
 # EJERCICIO 6: BUCLE FOR
+
 
 def nombres_mas_4_letras(nombres: list) -> list:
     resultado = []
@@ -67,7 +87,9 @@ def nombres_mas_4_letras(nombres: list) -> list:
 
     return resultado
 
-# BUCLE WHILE
+
+
+# EJERCICIO 7: BUCLE WHILE
 
 
 def contar_hasta_stop() -> None:
@@ -82,7 +104,10 @@ def contar_hasta_stop() -> None:
         print(contador)
         contador += 1
 
+
+
 # EJERCICIO 8: NÚMEROS PARES
+
 
 def obtener_pares(numeros: list) -> list:
     pares = []
@@ -93,12 +118,27 @@ def obtener_pares(numeros: list) -> list:
 
     return pares
 
+
+
 # EJERCICIO 9: FUNCIÓN ES_PAR
 
+
 def es_par(numero: int) -> bool:
+    """
+    Comprueba si un número es par.
+
+    Args:
+        numero (int): Número a comprobar.
+
+    Returns:
+        bool: True si es par y False si es impar.
+    """
     return numero % 2 == 0
 
-# *ARGS
+
+
+# EJERCICIO 10: *ARGS
+
 
 def media(*numeros: float) -> float:
     if len(numeros) == 0:
@@ -106,38 +146,56 @@ def media(*numeros: float) -> float:
 
     return sum(numeros) / len(numeros)
 
+
+
 # EJERCICIO 11: MAP Y LAMBDA
+
 
 def celsius_a_fahrenheit(temperaturas: list) -> list:
     return list(map(lambda x: x * 9 / 5 + 32, temperaturas))
 
+
+
 # EJERCICIO 12: FILTER
+
 
 def nombres_empiezan_a(nombres: list) -> list:
     return list(filter(lambda nombre: nombre.startswith("A"), nombres))
 
+
+
 # EJERCICIO 13: ZIP
+
 
 def combinar_nombres_notas(nombres: list, notas: list) -> list:
     return list(zip(nombres, notas))
 
+
+
 # EJERCICIO 14: ENUMERATE
+
 
 def enumerar_ciudades(ciudades: list) -> list:
     return list(enumerate(ciudades, start=1))
 
+
+
 # EJERCICIO 15: MAP Y FILTER
 
+
 def transformar_filtrar_palabras(palabras: list) -> list:
-    # Primero convierte las palabras a title case
+    # Convertimos las palabras a formato título
     resultado = list(map(lambda palabra: palabra.title(), palabras))
 
-    # Después selecciona las de 5 letras o más
+    # Filtramos las palabras con 5 o más letras
     resultado = list(filter(lambda palabra: len(palabra) >= 5, resultado))
 
     return resultado
 
+
+
 # EJERCICIO 16: VARIABLES TIPADAS
+
 
 edad: int = 38
 
@@ -145,12 +203,18 @@ precios: list[float] = [10.5, 20.0, 30.75]
 
 coordenadas: tuple[int, int] = (10, 20)
 
+
+
 # EJERCICIO 17: MAYOR DE EDAD
+
 
 def es_mayor_de_edad(edad: int) -> bool:
     return edad >= 18
 
+
+
 # EJERCICIO 18: CONCATENAR
+
 
 def concatena(a: str, b: str) -> str:
     if b is None:
@@ -189,7 +253,28 @@ def suma_mixta(a, b) -> float:
     return float(a) + float(b)
 
 
+
+# EJERCICIO 22: DOCSTRING GOOGLE
+
+
+# La función es_par del ejercicio 9 incluye
+# un docstring con Args y Returns.
+
+
+
+# EJERCICIO 23: ÁREA DEL CÍRCULO
+
+
 def area_circulo(radio: float) -> float:
+    """
+    Calcula el área de un círculo.
+
+    Args:
+        radio (float): Radio del círculo.
+
+    Returns:
+        float: Área calculada.
+    """
     return 3.1416 * radio ** 2
 
 
@@ -198,6 +283,18 @@ def area_circulo(radio: float) -> float:
 
 
 def factorial(n: int) -> int:
+    """
+    Calcula el factorial de un número.
+
+    Args:
+        n (int): Número entero no negativo.
+
+    Returns:
+        int: Factorial del número.
+
+    Raises:
+        ValueError: Si el número es negativo.
+    """
     if n < 0:
         raise ValueError("El número no puede ser negativo")
 
@@ -207,6 +304,21 @@ def factorial(n: int) -> int:
         resultado = resultado * numero
 
     return resultado
+
+
+
+# EJERCICIO 25: DOCSTRING DE MÓDULO
+
+"""Operaciones básicas con Python.
+
+Este módulo contiene funciones para trabajar
+con números, cadenas de texto y listas.
+También incluye ejemplos de bucles y condicionales.
+"""
+
+
+
+# EJERCICIO 26: CONTAR LÍNEAS DE UN ARCHIVO
 
 
 def contar_lineas_archivo(path: str) -> int:
@@ -233,9 +345,6 @@ def lee_float(path: str) -> float:
 
     except FileNotFoundError:
         return None
-
-    # Si el contenido no es numérico, float()
-    # lanza automáticamente ValueError.
 
 
 
