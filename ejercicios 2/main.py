@@ -129,7 +129,7 @@ print(leccion1.suma_mixta("10", 5))
 
 # EJERCICIO 22: DOCSTRING
 print("EJERCICIO 22")
-help(leccion1.es_par)
+print(leccion1.es_par(10))
 
 
 

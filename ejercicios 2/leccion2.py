@@ -255,11 +255,17 @@ def suma_mixta(a, b) -> float:
 
 
 # EJERCICIO 22: DOCSTRING GOOGLE
+def es_par(numero: int) -> bool:
+    """
+    Comprueba si un número es par.
 
+    Args:
+        numero (int): Número a comprobar.
 
-# La función es_par del ejercicio 9 incluye
-# un docstring con Args y Returns.
-
+    Returns:
+        bool: True si es par y False si es impar.
+    """
+    return numero % 2 == 0
 
 
 # EJERCICIO 23: ÁREA DEL CÍRCULO
