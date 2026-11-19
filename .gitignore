@@ -18,6 +18,9 @@ ENV/
 .pytest_cache/
 .mypy_cache/
 
+# Datos locales para las prácticas
+Practicas/datos/
+
 # Archivos del sistema operativo
 .DS_Store
 Thumbs.db
